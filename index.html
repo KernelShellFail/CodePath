@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CodePath – Learn Programming in 30 Days</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 30px rgba(99,102,241,0.35);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
+
+<!-- HERO -->
+<section class="text-center py-24 px-6">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in">
+        🚀 Learn Programming in 30 Days
+    </h1>
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg" data-aos="fade-up">
+        Structured, beginner-friendly learning paths designed to build
+        <b>strong fundamentals, logic, and real-world skills</b>.
+        Learn once — apply everywhere.
+    </p>
+
+    <div class="mt-10 flex justify-center gap-4 flex-wrap">
+        <span class="px-4 py-2 glass rounded-full text-sm">Beginner Friendly</span>
+        <span class="px-4 py-2 glass rounded-full text-sm">Project Based</span>
+        <span class="px-4 py-2 glass rounded-full text-sm">Interview Ready</span>
+    </div>
+</section>
+
+<!-- COURSES -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+        📚 Choose Your Learning Path
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Python -->
+        <a href="python.html"
+           class="glass card rounded-2xl p-8 transition-all duration-300"
+           data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-3">🐍 Python</h3>
+            <p class="text-gray-400 mb-4">
+                Master Python fundamentals, automation, and real-world scripting.
+            </p>
+            <span class="text-indigo-400 font-medium">View Roadmap →</span>
+        </a>
+
+        <!-- Java -->
+        <a href="java.html"
+           class="glass card rounded-2xl p-8 transition-all duration-300"
+           data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-2xl font-semibold mb-3">☕ Java</h3>
+            <p class="text-gray-400 mb-4">
+                Learn Java, OOP concepts, collections, and backend foundations.
+            </p>
+            <span class="text-rose-400 font-medium">View Roadmap →</span>
+        </a>
+
+        <!-- PHP -->
+        <a href="php.html"
+           class="glass card rounded-2xl p-8 transition-all duration-300"
+           data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-2xl font-semibold mb-3">🐘 PHP</h3>
+            <p class="text-gray-400 mb-4">
+                Build dynamic websites with PHP, forms, sessions, and MySQL.
+            </p>
+            <span class="text-emerald-400 font-medium">View Roadmap →</span>
+        </a>
+
+        <!-- C & C++ -->
+        <a href="c-cpp.html"
+           class="glass card rounded-2xl p-8 transition-all duration-300"
+           data-aos="fade-up">
+            <h3 class="text-2xl font-semibold mb-3">💻 C & C++</h3>
+            <p class="text-gray-400 mb-4">
+                Strengthen logic, memory concepts, and OOP using C & C++.
+            </p>
+            <span class="text-sky-400 font-medium">View Roadmap →</span>
+        </a>
+
+        <!-- DSA -->
+        <a href="dsa.html"
+           class="glass card rounded-2xl p-8 transition-all duration-300"
+           data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-2xl font-semibold mb-3">📊 DSA</h3>
+            <p class="text-gray-400 mb-4">
+                Master data structures & algorithms for interviews and competitions.
+            </p>
+            <span class="text-cyan-400 font-medium">View Roadmap →</span>
+        </a>
+
+        <!-- Coming Soon -->
+        <div class="glass rounded-2xl p-8 opacity-70"
+             data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-2xl font-semibold mb-3">🌐 Web Dev</h3>
+            <p class="text-gray-400 mb-4">
+                HTML, CSS, JavaScript & modern frontend tools.
+            </p>
+            <span class="text-gray-400 font-medium">Coming Soon</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="max-w-6xl mx-auto px-6 pb-20 text-center">
+    <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">
+        🎯 Why Learn With Us?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-300">
+        <div class="glass rounded-xl p-6" data-aos="zoom-in">
+            🧠 Strong Fundamentals
+        </div>
+        <div class="glass rounded-xl p-6" data-aos="zoom-in" data-aos-delay="100">
+            🔨 Real Projects
+        </div>
+        <div class="glass rounded-xl p-6" data-aos="zoom-in" data-aos-delay="200">
+            🎓 Interview Ready
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-12 text-gray-400 border-t border-white/10">
+    <p class="text-lg font-semibold">CodePath</p>
+    <p class="text-sm mt-2">
+        Learn • Build • Grow
+    </p>
+    <p class="text-xs mt-2">
+        © 2026 CodePath. All rights reserved.
+    </p>
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: "ease-out-cubic"
+    });
+</script>
+
+</body>
+</html>
