@@ -418,7 +418,7 @@ print(squares)  # [1, 4, 9, 16, 25]</code></pre>
 <!-- Load Navigation and Footer -->
 <script>
     // Load navbar
-    fetch('_includes/navbar.html')
+    fetch('includes/navbar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
@@ -426,7 +426,7 @@ print(squares)  # [1, 4, 9, 16, 25]</code></pre>
         .catch(err => console.error('Error loading navbar:', err));
     
     // Load footer
-    fetch('_includes/footer.html')
+    fetch('includes/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
