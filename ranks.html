@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Learning Ranks & Levels - CodePath</title>
+    <meta name="description" content="Discover the ranking system at CodePath. Track your progress through beginner, intermediate, and advanced ranks as you master programming.">
+    <meta name="keywords" content="codepath ranks, programming levels, coding ranks, learning levels, programming progression">
+    <meta name="author" content="CodePath">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Learning Ranks & Levels - CodePath">
+    <meta property="og:description" content="Track your progress through our ranking system as you master programming.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/codepath/ranks.html">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Prism.js for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .rank-card {
+            transition: all 0.3s;
+        }
+
+        .rank-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px rgba(99,102,241,0.4);
+        }
+
+        .rank-badge {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .rank-bronze { color: #cd7f32; }
+        .rank-silver { color: #c0c0c0; }
+        .rank-gold { color: #ffd700; }
+        .rank-platinum { color: #e5e4e2; }
+        .rank-diamond { color: #b9f2ff; }
+        .rank-master { color: #ff69b4; }
+        .rank-legend { color: #9b59b6; }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+<!-- HERO -->
+<main id="main-content">
+<section class="text-center py-24 px-6" role="banner">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in">
+        🏆 Learning Ranks & Levels
+    </h1>
+    <p class="text-gray-300 max-w-3xl mx-auto text-lg" data-aos="fade-up">
+        Track your programming journey through our ranking system. 
+        Progress from beginner to legend as you master new skills and complete challenges.
+    </p>
+</section>
+
+<!-- RANKS -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+    <div class="space-y-8">
+
+        <!-- Rank 1: Bronze -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-right">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-bronze">🥉</div>
+                    <h2 class="text-3xl font-bold rank-bronze mb-2">Bronze</h2>
+                    <p class="text-gray-400 text-sm">Beginner</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Starting Your Journey</h3>
+                    <p class="text-gray-300 mb-4">
+                        You've just begun your programming journey. Learn the basics, complete your first programs, 
+                        and understand fundamental concepts.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete Week 1 of any language track</li>
+                            <li>Write your first program</li>
+                            <li>Understand variables and data types</li>
+                            <li>Complete 5 basic exercises</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 2: Silver -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-left">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-silver">🥈</div>
+                    <h2 class="text-3xl font-bold rank-silver mb-2">Silver</h2>
+                    <p class="text-gray-400 text-sm">Novice</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Building Foundations</h3>
+                    <p class="text-gray-300 mb-4">
+                        You're building solid foundations. Master control flow, loops, functions, 
+                        and start solving more complex problems.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete Week 2 of any language track</li>
+                            <li>Master loops and conditionals</li>
+                            <li>Build your first mini-project</li>
+                            <li>Complete 15 exercises</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 3: Gold -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-right">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-gold">🥇</div>
+                    <h2 class="text-3xl font-bold rank-gold mb-2">Gold</h2>
+                    <p class="text-gray-400 text-sm">Intermediate</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Advancing Skills</h3>
+                    <p class="text-gray-300 mb-4">
+                        You're becoming proficient. Understand OOP concepts, work with data structures, 
+                        and build real-world applications.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete Week 3 of any language track</li>
+                            <li>Master OOP concepts</li>
+                            <li>Build 2+ portfolio projects</li>
+                            <li>Complete 30 exercises</li>
+                            <li>Understand data structures basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 4: Platinum -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-left">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-platinum">💎</div>
+                    <h2 class="text-3xl font-bold rank-platinum mb-2">Platinum</h2>
+                    <p class="text-gray-400 text-sm">Advanced</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Mastering Concepts</h3>
+                    <p class="text-gray-300 mb-4">
+                        You're mastering advanced concepts. Work with databases, APIs, frameworks, 
+                        and solve complex programming challenges.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete Week 4 of any language track</li>
+                            <li>Master advanced topics (databases, APIs, etc.)</li>
+                            <li>Build 5+ complex projects</li>
+                            <li>Complete 50 exercises</li>
+                            <li>Complete one full 30-day track</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 5: Diamond -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-right">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-diamond">💠</div>
+                    <h2 class="text-3xl font-bold rank-diamond mb-2">Diamond</h2>
+                    <p class="text-gray-400 text-sm">Expert</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Becoming an Expert</h3>
+                    <p class="text-gray-300 mb-4">
+                        You're an expert programmer. Master DSA, solve interview-level problems, 
+                        and help others learn.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete DSA track</li>
+                            <li>Solve 100+ coding problems</li>
+                            <li>Build 10+ portfolio projects</li>
+                            <li>Complete 3+ language tracks</li>
+                            <li>Master algorithms and data structures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 6: Master -->
+        <div class="glass rank-card rounded-2xl p-8" data-aos="fade-left">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-master">👑</div>
+                    <h2 class="text-3xl font-bold rank-master mb-2">Master</h2>
+                    <p class="text-gray-400 text-sm">Master Programmer</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Programming Mastery</h3>
+                    <p class="text-gray-300 mb-4">
+                        You've achieved programming mastery. You can solve complex problems, 
+                        design systems, and mentor others.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete all language tracks</li>
+                            <li>Solve 200+ coding problems</li>
+                            <li>Build 15+ complex projects</li>
+                            <li>Contribute to open source</li>
+                            <li>Help others learn (mentoring/teaching)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rank 7: Legend -->
+        <div class="glass rank-card rounded-2xl p-8 border-2 border-purple-500" data-aos="zoom-in">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-center">
+                    <div class="rank-badge rank-legend">🌟</div>
+                    <h2 class="text-3xl font-bold rank-legend mb-2">Legend</h2>
+                    <p class="text-gray-400 text-sm">Programming Legend</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-3">Becoming a Legend</h3>
+                    <p class="text-gray-300 mb-4">
+                        You're a programming legend. You've mastered multiple technologies, 
+                        built amazing projects, and inspire others in the community.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 text-sm"><strong>Requirements:</strong></p>
+                        <ul class="text-gray-300 text-sm space-y-1 list-disc list-inside">
+                            <li>Complete all tracks with excellence</li>
+                            <li>Solve 500+ coding problems</li>
+                            <li>Build 25+ impressive projects</li>
+                            <li>Make significant open source contributions</li>
+                            <li>Create learning content for others</li>
+                            <li>Lead or contribute significantly to the community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROGRESSION INFO -->
+<section class="max-w-6xl mx-auto px-6 pb-20">
+    <div class="glass rounded-2xl p-10 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6">📊 How Rankings Work</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div>
+                <h3 class="text-xl font-semibold mb-3 text-indigo-400">Track Completion</h3>
+                <p class="text-gray-300">
+                    Complete weekly modules and entire learning tracks to progress through ranks.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-3 text-rose-400">Project Building</h3>
+                <p class="text-gray-300">
+                    Build real projects and add them to your portfolio to demonstrate your skills.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-3 text-emerald-400">Problem Solving</h3>
+                <p class="text-gray-300">
+                    Solve coding challenges and practice problems to strengthen your skills.
+                </p>
+            </div>
+        </div>
+        <p class="text-gray-400 mt-8 text-sm">
+            Start your journey today and climb through the ranks! Each rank brings new challenges 
+            and opportunities to grow as a programmer.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<!-- Prism.js for Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/main.js"></script>
+
+<!-- Load Navigation and Footer -->
+<script>
+    // Load navbar
+    fetch('_includes/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading navbar:', err));
+    
+    // Load footer
+    fetch('_includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+</script>
+
+<script>
+    // Initialize AOS after content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: "ease-out-cubic"
+        });
+    });
+</script>
+
+</body>
+</html>

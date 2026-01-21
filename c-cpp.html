@@ -2,17 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>1 Month C & C++ Learning Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>C & C++ Learning Plan - 30 Days to Master C/C++ | CodePath</title>
+    <meta name="description" content="Master C and C++ in 30 days with our structured learning plan. Learn programming fundamentals, memory management, OOP, and build strong logic skills.">
+    <meta name="keywords" content="c programming tutorial, c++ tutorial, learn c, learn c++, c programming basics, c++ basics, c++ oop, memory management">
+    <meta name="author" content="CodePath">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="C & C++ Learning Plan - 30 Days to Master C/C++">
+    <meta property="og:description" content="A structured roadmap to build strong programming fundamentals, master logic & memory concepts, and learn Object-Oriented Programming.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/codepath/c-cpp.html">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Prism.js for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
         body {
@@ -41,9 +65,15 @@
 </head>
 
 <body class="bg-gradient-to-br from-slate-950 via-gray-900 to-black text-white">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
 
 <!-- HERO -->
-<section class="text-center py-20 px-6">
+<main id="main-content">
+<section class="text-center py-20 px-6" role="banner">
     <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in">
         💻 1-Month C & C++ Learning Plan
     </h1>
@@ -59,6 +89,81 @@
             <div class="h-full bg-sky-500 progress" style="width:100%"></div>
         </div>
         <p class="text-sm text-gray-400 mt-2">📅 30 Days • ⏱ 2–3 Hours / Day</p>
+    </div>
+</section>
+
+<!-- GETTING STARTED -->
+<section class="max-w-6xl mx-auto px-6 py-12" id="getting-started">
+    <div class="glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6">🚀 Getting Started with C & C++</h2>
+        
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-xl font-semibold mb-3">What are C & C++?</h3>
+                <p class="text-gray-300 mb-4">
+                    <strong>C</strong> is a powerful, low-level programming language developed in the 1970s. It's the foundation 
+                    of many modern languages and is known for its performance and direct memory access.
+                </p>
+                <p class="text-gray-300">
+                    <strong>C++</strong> is an extension of C with object-oriented programming features. Created by Bjarne Stroustrup, 
+                    C++ combines the power of C with modern OOP concepts, making it ideal for system programming, game development, 
+                    and performance-critical applications.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Installation & Setup</h3>
+                <p class="text-gray-300 mb-4">
+                    Follow these steps to set up C/C++ on your computer:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                    <li><strong>Windows:</strong> Install MinGW or Visual Studio with C++ tools</li>
+                    <li><strong>macOS:</strong> Install Xcode Command Line Tools: <code class="bg-black/30 px-2 py-1 rounded">xcode-select --install</code></li>
+                    <li><strong>Linux:</strong> Install GCC: <code class="bg-black/30 px-2 py-1 rounded">sudo apt install gcc g++</code></li>
+                    <li>Install a code editor: <strong>VS Code</strong> (recommended) with C/C++ extensions</li>
+                    <li>Verify installation: <code class="bg-black/30 px-2 py-1 rounded">gcc --version</code> and <code class="bg-black/30 px-2 py-1 rounded">g++ --version</code></li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Your First C Program</h3>
+                <p class="text-gray-300 mb-4">
+                    Let's write your first C program! Create a file called <code class="bg-black/30 px-2 py-1 rounded">hello.c</code>:
+                </p>
+                
+                <!-- Code Example -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">C</span>
+                        <button class="copy-btn" aria-label="Copy code to clipboard">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-c">// Your first C program
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    printf("Welcome to C programming!\n");
+    
+    // Variables
+    int age = 30;
+    float price = 19.99;
+    char grade = 'A';
+    
+    printf("Age: %d, Price: %.2f, Grade: %c\n", age, price, grade);
+    return 0;
+}</code></pre>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 mt-4">
+                    Compile with <code class="bg-black/30 px-2 py-1 rounded">gcc hello.c -o hello</code> and run with 
+                    <code class="bg-black/30 px-2 py-1 rounded">./hello</code> (Linux/Mac) or <code class="bg-black/30 px-2 py-1 rounded">hello.exe</code> (Windows).
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -79,6 +184,52 @@
             <li>Input / output using scanf & printf</li>
             <li>Operators & expressions</li>
         </ul>
+
+        <!-- Code Example: Input/Output -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-sky-300">Example: Input and Output</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">C</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int num1, num2, sum;
+    
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    
+    sum = num1 + num2;
+    printf("Sum: %d\n", sum);
+    
+    return 0;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise -->
+        <div class="exercise-container mt-6">
+            <div class="exercise-title">
+                <i class="fas fa-lightbulb"></i> Exercise: Calculator Program
+            </div>
+            <div class="exercise-description">
+                Create a calculator that takes two numbers and performs addition, subtraction, multiplication, and division.
+            </div>
+            <div class="exercise-hint">
+                <div class="exercise-hint-title">💡 Hint</div>
+                Use switch-case statement for operator selection and handle division by zero!
+            </div>
+        </div>
+
         <p class="mt-4 text-sky-400 font-medium">
             🔨 Mini Tasks: Calculator, Even/Odd Program
         </p>
@@ -117,6 +268,70 @@
             <li>Classes & objects</li>
             <li>Constructors & destructors</li>
         </ul>
+
+        <!-- Code Example: Classes and Objects -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-sky-300">Example: Classes and Objects in C++</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">C++</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int age;
+
+public:
+    // Constructor
+    Student(string n, int a) {
+        name = n;
+        age = a;
+    }
+    
+    // Member function
+    void displayInfo() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    // Create objects
+    Student student1("Alice", 20);
+    Student student2("Bob", 22);
+    
+    student1.displayInfo();
+    student2.displayInfo();
+    
+    return 0;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container mt-6">
+            <div class="quiz-question">
+                What is the main difference between C and C++?
+            </div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-correct="false">C is faster than C++</div>
+                <div class="quiz-option" data-correct="true">C++ supports object-oriented programming, C doesn't</div>
+                <div class="quiz-option" data-correct="false">C++ is only for web development</div>
+                <div class="quiz-option" data-correct="false">C is newer than C++</div>
+            </div>
+            <button class="quiz-submit" disabled>Submit Answer</button>
+            <div class="quiz-feedback" 
+                 data-correct-feedback="Correct! C++ extends C with OOP features like classes and objects."
+                 data-incorrect-feedback="Not quite. C++ is an extension of C that adds object-oriented programming capabilities."></div>
+        </div>
+
         <p class="mt-4 text-sky-400 font-medium">
             🔨 Mini Project: Simple ATM System
         </p>
@@ -155,19 +370,49 @@
 
 </div>
 
-<!-- FOOTER -->
-<footer class="text-center py-12 mt-20 text-gray-400">
-    <p class="text-lg">🧠 Logic first. Language second.</p>
-    <p class="text-sm mt-2">C • C++ • Data Structures • OOP</p>
-</footer>
+</main>
 
-<!-- AOS -->
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<!-- Prism.js for Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<!-- AOS Animation -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/main.js"></script>
+
+<!-- Load Navigation and Footer -->
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-out-cubic"
+    // Load navbar
+    fetch('_includes/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading navbar:', err));
+    
+    // Load footer
+    fetch('_includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+</script>
+
+<script>
+    // Initialize AOS after content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: "ease-out-cubic"
+        });
     });
 </script>
 

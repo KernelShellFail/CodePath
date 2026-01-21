@@ -2,17 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>1 Month Java Learning Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Java Learning Plan - 30 Days to Master Java | CodePath</title>
+    <meta name="description" content="Master Java in 30 days with our structured learning plan. Learn Java fundamentals, OOP concepts, collections, and backend foundations. Perfect for beginners.">
+    <meta name="keywords" content="java tutorial, learn java, java programming, java basics, java for beginners, java roadmap, java course, object oriented programming">
+    <meta name="author" content="CodePath">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Java Learning Plan - 30 Days to Master Java">
+    <meta property="og:description" content="A structured roadmap to master Java fundamentals, build strong OOP skills, and prepare for backend development.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/codepath/java.html">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Prism.js for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
         body {
@@ -41,9 +65,15 @@
 </head>
 
 <body class="bg-gradient-to-br from-rose-950 via-slate-900 to-black text-white">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
 
 <!-- HERO -->
-<section class="text-center py-20 px-6">
+<main id="main-content">
+<section class="text-center py-20 px-6" role="banner">
     <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in">
         ☕ 1-Month Java Learning Plan
     </h1>
@@ -59,6 +89,79 @@
             <div class="h-full bg-rose-500 progress" style="width:100%"></div>
         </div>
         <p class="text-sm text-gray-400 mt-2">📅 30 Days • ⏱ 2–3 Hours / Day</p>
+    </div>
+</section>
+
+<!-- GETTING STARTED -->
+<section class="max-w-6xl mx-auto px-6 py-12" id="getting-started">
+    <div class="glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6">🚀 Getting Started with Java</h2>
+        
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-xl font-semibold mb-3">What is Java?</h3>
+                <p class="text-gray-300 mb-4">
+                    Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle). 
+                    Released in 1995, Java follows the "Write Once, Run Anywhere" (WORA) principle, meaning compiled Java code 
+                    can run on any platform that has a Java Virtual Machine (JVM).
+                </p>
+                <p class="text-gray-300">
+                    <strong>Why learn Java?</strong> Java is widely used in enterprise applications, Android app development, 
+                    web applications, and large-scale systems. It's known for its robustness, security, and extensive ecosystem.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Installation & Setup</h3>
+                <p class="text-gray-300 mb-4">
+                    Follow these steps to set up Java on your computer:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                    <li>Download JDK (Java Development Kit) from <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:underline">oracle.com</a> (JDK 17 or later recommended)</li>
+                    <li>Install JDK and set JAVA_HOME environment variable</li>
+                    <li>Verify installation: Open terminal/command prompt and type: <code class="bg-black/30 px-2 py-1 rounded">java -version</code></li>
+                    <li>Install an IDE: <strong>IntelliJ IDEA</strong> (recommended) or VS Code with Java extensions</li>
+                    <li>Configure your IDE to use the installed JDK</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Your First Java Program</h3>
+                <p class="text-gray-300 mb-4">
+                    Let's write your first Java program! Create a file called <code class="bg-black/30 px-2 py-1 rounded">HelloWorld.java</code> 
+                    and type the following:
+                </p>
+                
+                <!-- Code Example -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Java</span>
+                        <button class="copy-btn" aria-label="Copy code to clipboard">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-java">// Your first Java program
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        System.out.println("Welcome to Java programming!");
+        
+        // Variables
+        String name = "CodePath";
+        int age = 30;
+        System.out.println("My name is " + name + " and I'm " + age + " years old.");
+    }
+}</code></pre>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 mt-4">
+                    Compile with <code class="bg-black/30 px-2 py-1 rounded">javac HelloWorld.java</code> and run with 
+                    <code class="bg-black/30 px-2 py-1 rounded">java HelloWorld</code>. You should see the output!
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -79,6 +182,52 @@
             <li>Variables, data types & type casting</li>
             <li>Operators & basic input/output</li>
         </ul>
+
+        <!-- Code Example: Variables and Data Types -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-rose-300">Example: Variables and Data Types</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Java</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-java">// Variables and Data Types
+public class DataTypes {
+    public static void main(String[] args) {
+        String name = "Java";          // String
+        int age = 30;                   // Integer
+        double price = 19.99;          // Double
+        boolean isAwesome = true;      // Boolean
+        char grade = 'A';              // Character
+        
+        System.out.println("Language: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Price: $" + price);
+        System.out.println("Is Awesome: " + isAwesome);
+        System.out.println("Grade: " + grade);
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise -->
+        <div class="exercise-container mt-6">
+            <div class="exercise-title">
+                <i class="fas fa-lightbulb"></i> Exercise: Calculator Program
+            </div>
+            <div class="exercise-description">
+                Create a simple calculator that takes two numbers and an operator (+, -, *, /) and performs the operation.
+            </div>
+            <div class="exercise-hint">
+                <div class="exercise-hint-title">💡 Hint</div>
+                Use Scanner class for input and switch statement for operator selection!
+            </div>
+        </div>
+
         <p class="mt-4 text-rose-400 font-medium">
             🔨 Mini Tasks: Calculator, Even/Odd Program
         </p>
@@ -117,6 +266,77 @@
             <li>Inheritance & method overriding</li>
             <li>Polymorphism & dynamic binding</li>
         </ul>
+
+        <!-- Code Example: Classes and Objects -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-rose-300">Example: Classes and Objects</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Java</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-java">// Class definition
+public class Student {
+    // Private attributes (Encapsulation)
+    private String name;
+    private int age;
+    
+    // Constructor
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    // Method
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create objects
+        Student student1 = new Student("Alice", 20);
+        Student student2 = new Student("Bob", 22);
+        
+        student1.displayInfo();
+        student2.displayInfo();
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container mt-6">
+            <div class="quiz-question">
+                Which keyword is used to refer to the current object in Java?
+            </div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-correct="false">super</div>
+                <div class="quiz-option" data-correct="true">this</div>
+                <div class="quiz-option" data-correct="false">self</div>
+                <div class="quiz-option" data-correct="false">current</div>
+            </div>
+            <button class="quiz-submit" disabled>Submit Answer</button>
+            <div class="quiz-feedback" 
+                 data-correct-feedback="Correct! 'this' refers to the current object instance."
+                 data-incorrect-feedback="Not quite. In Java, we use 'this' to refer to the current object."></div>
+        </div>
+
         <p class="mt-4 text-rose-400 font-medium">
             🔨 Mini Project: Student Management System
         </p>
@@ -155,19 +375,49 @@
 
 </div>
 
-<!-- FOOTER -->
-<footer class="text-center py-12 mt-20 text-gray-400">
-    <p class="text-lg">⚙️ Write once. Run anywhere.</p>
-    <p class="text-sm mt-2">Java • OOP • Backend • Logic Building</p>
-</footer>
+</main>
 
-<!-- AOS -->
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<!-- Prism.js for Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<!-- AOS Animation -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/main.js"></script>
+
+<!-- Load Navigation and Footer -->
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-out-cubic"
+    // Load navbar
+    fetch('_includes/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading navbar:', err));
+    
+    // Load footer
+    fetch('_includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+</script>
+
+<script>
+    // Initialize AOS after content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: "ease-out-cubic"
+        });
     });
 </script>
 

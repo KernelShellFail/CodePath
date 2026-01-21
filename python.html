@@ -2,17 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>1 Month Python Learning Plan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Python Learning Plan - 30 Days to Master Python | CodePath</title>
+    <meta name="description" content="Master Python in 30 days with our structured learning plan. Learn Python fundamentals, automation, OOP, and real-world scripting. Perfect for beginners.">
+    <meta name="keywords" content="python tutorial, learn python, python programming, python basics, python for beginners, python roadmap, python course">
+    <meta name="author" content="CodePath">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Python Learning Plan - 30 Days to Master Python">
+    <meta property="og:description" content="A step-by-step roadmap to master Python fundamentals, logic building, automation basics, and real-world mini projects.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/codepath/python.html">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Prism.js for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
         body {
@@ -41,15 +65,21 @@
 </head>
 
 <body class="bg-gradient-to-br from-indigo-950 via-slate-900 to-black text-white">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
 
 <!-- HERO -->
-<section class="text-center py-20 px-6">
+<main id="main-content">
+<section class="text-center py-20 px-6" role="banner">
     <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in">
         🐍 1-Month Python Learning Plan
     </h1>
     <p class="text-gray-300 max-w-3xl mx-auto text-lg" data-aos="fade-up">
         A step-by-step roadmap to master <b>Python fundamentals</b>, logic building,
-        automation basics, and real-world mini projects — even if you’re a complete beginner.
+        automation basics, and real-world mini projects — even if you're a complete beginner.
     </p>
 
     <!-- Progress -->
@@ -58,6 +88,76 @@
             <div class="h-full bg-indigo-500 progress" style="width:100%"></div>
         </div>
         <p class="text-sm text-gray-400 mt-2">📅 30 Days • ⏱ 2–3 Hours / Day</p>
+    </div>
+</section>
+
+<!-- GETTING STARTED -->
+<section class="max-w-6xl mx-auto px-6 py-12" id="getting-started">
+    <div class="glass rounded-2xl p-8 mb-12" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6">🚀 Getting Started with Python</h2>
+        
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-xl font-semibold mb-3">What is Python?</h3>
+                <p class="text-gray-300 mb-4">
+                    Python is a high-level, interpreted programming language known for its simplicity and readability. 
+                    Created by Guido van Rossum and first released in 1991, Python emphasizes code readability and 
+                    allows developers to express concepts in fewer lines of code than languages like C++ or Java.
+                </p>
+                <p class="text-gray-300">
+                    <strong>Why learn Python?</strong> Python is widely used in web development, data science, 
+                    artificial intelligence, automation, scientific computing, and more. It's beginner-friendly 
+                    yet powerful enough for professional applications.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Installation & Setup</h3>
+                <p class="text-gray-300 mb-4">
+                    Follow these steps to set up Python on your computer:
+                </p>
+                <ol class="list-decimal list-inside space-y-2 text-gray-300 ml-4">
+                    <li>Download Python from <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">python.org</a> (Python 3.11 or later recommended)</li>
+                    <li>Run the installer and check "Add Python to PATH"</li>
+                    <li>Verify installation by opening terminal/command prompt and typing: <code class="bg-black/30 px-2 py-1 rounded">python --version</code></li>
+                    <li>Install a code editor: <strong>VS Code</strong> (recommended) or PyCharm</li>
+                    <li>Install Python extension in VS Code</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Your First Python Program</h3>
+                <p class="text-gray-300 mb-4">
+                    Let's write your first Python program! Create a file called <code class="bg-black/30 px-2 py-1 rounded">hello.py</code> 
+                    and type the following:
+                </p>
+                
+                <!-- Code Example -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">Python</span>
+                        <button class="copy-btn" aria-label="Copy code to clipboard">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-python"># Your first Python program
+print("Hello, World!")
+print("Welcome to Python programming!")
+
+# Variables
+name = "CodePath"
+age = 30
+print(f"My name is {name} and I'm {age} years old.")</code></pre>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 mt-4">
+                    Run this program by typing <code class="bg-black/30 px-2 py-1 rounded">python hello.py</code> in your terminal. 
+                    You should see the output displayed on your screen!
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -78,6 +178,73 @@
             <li>Input/output & basic formatting</li>
             <li>Operators & expressions</li>
         </ul>
+        
+        <!-- Code Example: Variables and Data Types -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-indigo-300">Example: Variables and Data Types</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Python</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-python"># Variables and Data Types
+name = "Python"          # String
+age = 30                 # Integer
+price = 19.99           # Float
+is_awesome = True       # Boolean
+
+print(f"Language: {name}")
+print(f"Age: {age}")
+print(f"Price: ${price}")
+print(f"Is Awesome: {is_awesome}")
+
+# Type checking
+print(type(name))        # &lt;class 'str'&gt;
+print(type(age))         # &lt;class 'int'&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Example: Calculator -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-indigo-300">Example: Simple Calculator</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Python</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-python"># Simple Calculator
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print(f"Sum: {num1 + num2}")
+print(f"Difference: {num1 - num2}")
+print(f"Product: {num1 * num2}")
+print(f"Quotient: {num1 / num2}")</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise -->
+        <div class="exercise-container mt-6">
+            <div class="exercise-title">
+                <i class="fas fa-lightbulb"></i> Exercise: Even/Odd Checker
+            </div>
+            <div class="exercise-description">
+                Write a program that asks the user to enter a number and determines if it's even or odd.
+            </div>
+            <div class="exercise-hint">
+                <div class="exercise-hint-title">💡 Hint</div>
+                Use the modulo operator (%) to check if a number is divisible by 2. If the remainder is 0, it's even!
+            </div>
+        </div>
+
         <p class="mt-4 text-indigo-400 font-medium">
             🔨 Mini Tasks: Calculator, Even/Odd Checker
         </p>
@@ -97,6 +264,84 @@
             <li>Dictionaries & key-value logic</li>
             <li>String methods & slicing</li>
         </ul>
+
+        <!-- Code Example: Control Flow -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-indigo-300">Example: Conditional Statements</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Python</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-python"># Conditional Statements
+score = 85
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+else:
+    grade = "F"
+
+print(f"Score: {score}, Grade: {grade}")</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Example: Lists and Loops -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold mb-3 text-indigo-300">Example: Lists and Loops</h3>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-language">Python</span>
+                    <button class="copy-btn" aria-label="Copy code to clipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="code-content">
+                    <pre><code class="language-python"># Lists and Loops
+fruits = ["apple", "banana", "cherry", "date"]
+
+# Using for loop
+for fruit in fruits:
+    print(f"I like {fruit}")
+
+# Using while loop
+count = 0
+while count < len(fruits):
+    print(f"{count + 1}. {fruits[count]}")
+    count += 1
+
+# List comprehension
+numbers = [1, 2, 3, 4, 5]
+squares = [x**2 for x in numbers]
+print(squares)  # [1, 4, 9, 16, 25]</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container mt-6">
+            <div class="quiz-question">
+                What is the output of: <code class="bg-black/30 px-2 py-1 rounded">[x*2 for x in [1, 2, 3]]</code>?
+            </div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-correct="false">[1, 2, 3]</div>
+                <div class="quiz-option" data-correct="true">[2, 4, 6]</div>
+                <div class="quiz-option" data-correct="false">[1, 4, 9]</div>
+                <div class="quiz-option" data-correct="false">Error</div>
+            </div>
+            <button class="quiz-submit" disabled>Submit Answer</button>
+            <div class="quiz-feedback" 
+                 data-correct-feedback="Correct! List comprehensions are a powerful Python feature."
+                 data-incorrect-feedback="Not quite. Remember, list comprehensions iterate and apply the operation to each element."></div>
+        </div>
+
         <p class="mt-4 text-indigo-400 font-medium">
             🔨 Mini Project: Number Guessing Game
         </p>
@@ -154,19 +399,49 @@
 
 </div>
 
-<!-- FOOTER -->
-<footer class="text-center py-12 mt-20 text-gray-400">
-    <p class="text-lg">✨ Write less. Do more.</p>
-    <p class="text-sm mt-2">Python • Automation • Logic • Real-World Skills</p>
-</footer>
+</main>
 
-<!-- AOS -->
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<!-- Prism.js for Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<!-- AOS Animation -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/main.js"></script>
+
+<!-- Load Navigation and Footer -->
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: "ease-out-cubic"
+    // Load navbar
+    fetch('_includes/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading navbar:', err));
+    
+    // Load footer
+    fetch('_includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(err => console.error('Error loading footer:', err));
+</script>
+
+<script>
+    // Initialize AOS after content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: "ease-out-cubic"
+        });
     });
 </script>
 

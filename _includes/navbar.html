@@ -1,0 +1,59 @@
+<!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 glass border-b border-white/10" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="text-xl font-bold text-white hover:text-indigo-400 transition-colors" aria-label="CodePath Home">
+                🚀 CodePath
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white transition-colors">Home</a>
+                
+                <!-- Languages Dropdown -->
+                <div class="relative group">
+                    <button class="nav-link text-gray-300 hover:text-white transition-colors flex items-center" aria-expanded="false" aria-haspopup="true">
+                        Languages <span class="ml-1">▼</span>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 glass rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="py-2">
+                            <a href="python.html" class="block px-4 py-2 text-gray-300 hover:bg-white/10 hover:text-white">🐍 Python</a>
+                            <a href="java.html" class="block px-4 py-2 text-gray-300 hover:bg-white/10 hover:text-white">☕ Java</a>
+                            <a href="c-cpp.html" class="block px-4 py-2 text-gray-300 hover:bg-white/10 hover:text-white">💻 C & C++</a>
+                            <a href="php.html" class="block px-4 py-2 text-gray-300 hover:bg-white/10 hover:text-white">🐘 PHP</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="dsa.html" class="nav-link text-gray-300 hover:text-white transition-colors">📊 DSA</a>
+                <a href="perks.html" class="nav-link text-gray-300 hover:text-white transition-colors">🎁 Perks</a>
+                <a href="ranks.html" class="nav-link text-gray-300 hover:text-white transition-colors">🏆 Ranks</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-2" 
+                    id="mobile-menu-btn" 
+                    aria-label="Toggle mobile menu"
+                    aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-white/10">
+            <div class="flex flex-col space-y-2 pt-4">
+                <a href="index.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">Home</a>
+                <a href="python.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">🐍 Python</a>
+                <a href="java.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">☕ Java</a>
+                <a href="c-cpp.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">💻 C & C++</a>
+                <a href="php.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">🐘 PHP</a>
+                <a href="dsa.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">📊 DSA</a>
+                <a href="perks.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">🎁 Perks</a>
+                <a href="ranks.html" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">🏆 Ranks</a>
+            </div>
+        </div>
+    </div>
+</nav>
